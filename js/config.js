@@ -2,22 +2,34 @@ const config = {
     empresa: {
         nome: "A Minha Empresa",
         slogan: "Catálogos Digitais",
-        corprincipal: "#2e2e2e",
-        corsecundaria: "#6d6d6d",
         logo:"img/MDKimport_Logo.png"
     },
 
-    catalogos: [
+    cores:{
+
+        primaria:"#2E2E2E",
+        secundaria:"#6D6D6D",
+        fundo:"#FFFFFF",
+        texto:"#222222",
+        destaque:"#FF7A00"
+
+    },
+
+    catalogos:
         {
             titulo: "Catálogo Principal",
             pdf: "pdf/catalogo.pdf"
-        }
-    ],
+    },
 
-    contactos: {
-        website: "https://www.exemplo.pt",
-        email: "geral@exemplo.pt",
-        telefone: "+351 912345678"
+    contactos:{
+
+        telefone:"",
+        whatsapp:"",
+        email:"",
+        website:"",
+        morada:"",
+        maps:""
+
     },
 
     redes: {
