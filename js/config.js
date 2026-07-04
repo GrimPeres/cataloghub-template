@@ -17,7 +17,7 @@ const config = {
     contactos: {
         website: "https://www.exemplo.pt",
         email: "geral@exemplo.pt",
-        phone: "+351 912345678"
+        telefone: "+351 912345678"
     },
 
     redes: {
