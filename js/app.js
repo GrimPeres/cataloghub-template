@@ -1,10 +1,14 @@
 document.addEventListener("DOMContentLoaded", iniciar);
 
-function iniciar() {
+function iniciar(){
+
+    aplicarTema();
 
     carregarEmpresa();
 
     carregarCatalogos();
+
+    carregarContactos();
 
 }
 function carregarEmpresa() {
