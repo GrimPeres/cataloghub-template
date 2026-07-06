@@ -41,26 +41,28 @@ function carregarCatalogos() {
     });
 
 }
-function carregarCatalogos() {
+function carregarCatalogos(){
 
     const container = document.getElementById("catalogos");
 
     container.innerHTML = "";
 
-    config.catalogos.forEach(catalogo => {
+    catalogos.forEach(catalogo => {
 
         container.innerHTML += `
-
             <div class="catalogo">
+
+                <img src="${catalogo.capa}">
 
                 <h2>${catalogo.titulo}</h2>
 
                 <p>${catalogo.descricao}</p>
 
-                <button>Abrir</button>
+                <a href="${catalogo.pdf}" target="_blank">
+                    Abrir catálogo
+                </a>
 
             </div>
-
         `;
 
     });

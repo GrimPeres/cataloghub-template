@@ -16,26 +16,6 @@ const config = {
         }
     },
 
-    catalogos: [
-
-        {
-            id: 1,
-            titulo: "Catálogo Principal",
-            descricao: "Coleção Primavera",
-            capa: "img/catalogo1.jpg",
-            pdf: "pdf/catalogo.pdf"
-        },
-
-        {
-            id: 2,
-            titulo: "Carta de Vinhos",
-            descricao: "Vinhos Portugueses",
-            capa: "img/vinhos.jpg",
-            pdf: "pdf/vinhos.pdf"
-        }
-
-    ],
-
     contactos: {
 
         telefone: "+351 912345678",
