@@ -1,14 +1,11 @@
-document.addEventListener("DOMContentLoaded", iniciar);
-document.getElementById("hero").innerHTML = criarHero();
-
-function iniciar(){
+function iniciar() {
 
     aplicarTema();
 
-    carregarHeader();
+    document.getElementById("hero").innerHTML = criarHero();
 
     carregarCatalogos();
 
-    carregarFooter();
+    document.getElementById("footer").innerHTML = criarFooter();
 
 }

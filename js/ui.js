@@ -4,43 +4,40 @@
 
 function criarHero() {
 
+    return `
 
-    return = `
+        <section class="hero">
 
-        <div class="container hero-content">
+            <div class="container hero-content">
 
-            <img
-                src="${config.empresa.logo}"
-                alt="${config.empresa.nome}"
-                class="hero-logo">
+                <img
+                    src="${config.empresa.logo}"
+                    alt="${config.empresa.nome}"
+                    class="hero-logo">
 
-            <h1 class="hero-title">
+                <h1 class="hero-title">
+                    ${config.empresa.nome}
+                </h1>
 
-                ${config.empresa.nome}
+                <p class="hero-slogan">
+                    ${config.empresa.slogan}
+                </p>
 
-            </h1>
+                <p class="hero-description">
+                    ${config.empresa.descricao}
+                </p>
 
-            <p class="hero-slogan">
+                <button
+                    class="hero-button"
+                    id="btnCatalogos">
 
-                ${config.empresa.slogan}
+                    Ver Catálogos
 
-            </p>
+                </button>
 
-            <p class="hero-description">
+            </div>
 
-                ${config.empresa.descricao}
-
-            </p>
-
-            <button
-                class="hero-button"
-                id="btnCatalogos">
-
-                Ver Catálogos
-
-            </button>
-
-        </div>
+        </section>
 
     `;
 
