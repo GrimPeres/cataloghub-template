@@ -92,11 +92,15 @@ function criarCard(catalogo) {
 
             <div class="catalog-card h-100 shadow-sm">
 
-                <img
-                    src="${catalogo.capa}"
-                    class="card-img-top"
-                    alt="${catalogo.titulo}">
+                <div class="catalog-image">
 
+                    <img
+                        src="${catalogo.capa}"
+                        alt="${catalogo.titulo}">
+
+                    ${catalogo.novo ? '<span class="badge-new">NOVO</span>' : ''}
+
+                </div>
                 <div class="catalog-content">
 
                     <h5 class="card-title">
