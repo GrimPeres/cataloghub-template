@@ -33,7 +33,7 @@ const catalogos = [
 
         capa: "img/catalogo1.jpg",
 
-        pdf: "pdf/catalogo.pdf",
+        pdf: "pdf/catalogo-MDKimport.pdf",
 
         destaque: true,
 
