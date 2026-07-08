@@ -1,33 +1,24 @@
-function carregarHeader() {
+function carregarHeader(){
 
-    const header = document.getElementById("header");
+    document.getElementById("header").innerHTML = `
 
-    header.innerHTML = `
-        <img src="${config.empresa.logo}" alt="${config.empresa.nome}">
+        <div class="container py-5 text-center">
 
-        <h1>${config.empresa.nome}</h1>
+            <img src="${config.empresa.logo}"
+                 class="img-fluid mb-3"
+                 style="max-height:80px">
 
-        <p>${config.empresa.slogan}</p>
+            <h1>${config.empresa.nome}</h1>
+
+            <p class="lead">
+
+                ${config.empresa.slogan}
+
+            </p>
+
+        </div>
+
     `;
-
-}
-function carregarFooter() {
-
-    const footer = document.getElementById("footer");
-
-    footer.innerHTML = `
-        <p>${config.contactos.email}</p>
-        <p>${config.contactos.telefone}</p>
-    `;
-
-}
-function carregarEmpresa() {
-
-    document.getElementById("empresa-nome").textContent =
-        config.empresa.nome;
-
-    document.getElementById("empresa-slogan").textContent =
-        config.empresa.slogan;
 
 }
 function carregarCatalogos(){
@@ -36,24 +27,71 @@ function carregarCatalogos(){
 
     container.innerHTML = "";
 
-    catalogos.forEach(catalogo => {
+    catalogos.forEach(catalogo=>{
 
         container.innerHTML += `
-            <div class="catalogo">
 
-                <img src="${catalogo.capa}">
+            <div class="col-12 col-sm-6 col-lg-4">
 
-                <h2>${catalogo.titulo}</h2>
+                <div class="card h-100 shadow-sm">
 
-                <p>${catalogo.descricao}</p>
+                    <img
+                        src="${catalogo.capa}"
+                        class="card-img-top"
+                        alt="${catalogo.titulo}">
 
-                <a href="${catalogo.pdf}" target="_blank">
-                    Abrir catálogo
-                </a>
+                    <div class="card-body">
+
+                        <h5>
+
+                            ${catalogo.titulo}
+
+                        </h5>
+
+                        <p>
+
+                            ${catalogo.descricao}
+
+                        </p>
+
+                    </div>
+
+                    <div class="card-footer bg-white border-0">
+
+                        <a
+                            href="${catalogo.pdf}"
+                            target="_blank"
+                            class="btn btn-dark w-100">
+
+                            Abrir catálogo
+
+                        </a>
+
+                    </div>
+
+                </div>
 
             </div>
+
         `;
 
     });
+
+}
+function carregarFooter(){
+
+    document.getElementById("footer").innerHTML=`
+
+        <div class="container text-center py-5">
+
+            <small>
+
+                ${config.empresa.nome}
+
+            </small>
+
+        </div>
+
+    `;
 
 }
