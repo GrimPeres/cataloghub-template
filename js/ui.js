@@ -27,13 +27,14 @@ function criarHero() {
                     ${config.empresa.descricao}
                 </p>
 
-                <button
-                    class="hero-button"
-                    id="btnCatalogos">
+                <a
+                    href="${catalogo.pdf}"
+                    target="_blank"
+                    class="catalog-button">
 
-                    Ver Catálogos
+                    Abrir Catálogo
 
-                </button>
+                </a>
 
             </div>
 
