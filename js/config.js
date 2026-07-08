@@ -3,7 +3,8 @@ const config = {
     empresa: {
         nome: "A Minha Empresa",
         slogan: "Catálogos Digitais",
-        logo: "img/logo.png"
+        logo: "img/logo.png",
+        descricao: "Consulte todos os nossos catálogos digitais e descubra os nossos produtos."
     },
 
     contactos: {

@@ -19,7 +19,9 @@ const catalogos = [
 
         ativo: true,
 
-        download:true
+        download:true,
+
+        novo:true
 
     },
     {
@@ -41,7 +43,9 @@ const catalogos = [
 
         ativo: true,
 
-        download:true
+        download:true,
+
+        novo:true
 
     },
     {
@@ -63,7 +67,9 @@ const catalogos = [
 
         ativo: true,
 
-        download:true
+        download:true,
+
+        novo:true
 
     }
 

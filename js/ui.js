@@ -2,30 +2,43 @@
 // HEADER
 // ========================================
 
-function carregarHeader() {
+function criarHero() {
 
-    const header = document.getElementById("header");
 
-    header.innerHTML = `
+    return = `
 
-        <div class="container py-5 text-center">
+        <div class="container hero-content">
 
             <img
                 src="${config.empresa.logo}"
                 alt="${config.empresa.nome}"
-                class="logo mb-4">
+                class="hero-logo">
 
-            <h1 class="display-5 fw-bold">
+            <h1 class="hero-title">
 
                 ${config.empresa.nome}
 
             </h1>
 
-            <p class="lead text-secondary">
+            <p class="hero-slogan">
 
                 ${config.empresa.slogan}
 
             </p>
+
+            <p class="hero-description">
+
+                ${config.empresa.descricao}
+
+            </p>
+
+            <button
+                class="hero-button"
+                id="btnCatalogos">
+
+                Ver Catálogos
+
+            </button>
 
         </div>
 
