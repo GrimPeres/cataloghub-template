@@ -28,11 +28,10 @@ function criarHero() {
                 </p>
 
                 <a
-                    href="${catalogo.pdf}"
-                    target="_blank"
-                    class="catalog-button">
+                    href="#catalogos"
+                    class="hero-button">
 
-                    Abrir Catálogo
+                    Ver Catálogos
 
                 </a>
 
@@ -98,7 +97,7 @@ function criarCard(catalogo) {
                     class="card-img-top"
                     alt="${catalogo.titulo}">
 
-                <div class="card-body">
+                <div class="catalog-content">
 
                     <h5 class="card-title">
                         ${catalogo.titulo}
@@ -110,17 +109,16 @@ function criarCard(catalogo) {
 
                 </div>
 
-                <div class="card-footer bg-white border-0">
+                <div class="catalog-actions bg-white border-0">
+                
+                <a
+                    href="${catalogo.pdf}"
+                    target="_blank"
+                    class="catalog-button w-100">
 
-                    <a
-                        class="catalog-button w-100">
-                        href="${catalogo.pdf}"
-                        target="_blank"
+                    Abrir Catálogo
 
-
-                        Abrir Catálogo
-
-                    </a>
+                </a>
 
                 </div>
 
@@ -134,9 +132,9 @@ function criarCard(catalogo) {
 // ========================================
 // FOOTER
 // ========================================
-function carregarFooter(){
+function criarFooter(){
 
-    document.getElementById("footer").innerHTML=`
+    return `
 
         <div class="container text-center py-5">
 
