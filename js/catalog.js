@@ -19,8 +19,8 @@ const catalogos = [
 
         ativo: true
 
-    }
-        {
+    },
+    {
         id: 2,
 
         titulo: "Catálogo MDK",
@@ -39,8 +39,8 @@ const catalogos = [
 
         ativo: true
 
-    }
-        {
+    },
+    {
         id: 3,
 
         titulo: "Catálogo Layout",
