@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", iniciar);
 
-function iniciar() {
+function iniciar(){
+
+    aplicarTema();
 
     carregarHeader();
 
     carregarCatalogos();
 
     carregarFooter();
-
-    carregarEmpresa();
 
 }

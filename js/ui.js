@@ -1,16 +1,27 @@
-function carregarHeader(){
+// ========================================
+// HEADER
+// ========================================
 
-    document.getElementById("header").innerHTML = `
+function carregarHeader() {
+
+    const header = document.getElementById("header");
+
+    header.innerHTML = `
 
         <div class="container py-5 text-center">
 
-            <img src="${config.empresa.logo}"
-                 class="img-fluid mb-3"
-                 style="max-height:80px">
+            <img
+                src="${config.empresa.logo}"
+                alt="${config.empresa.nome}"
+                class="logo mb-4">
 
-            <h1>${config.empresa.nome}</h1>
+            <h1 class="display-5 fw-bold">
 
-            <p class="lead">
+                ${config.empresa.nome}
+
+            </h1>
+
+            <p class="lead text-secondary">
 
                 ${config.empresa.slogan}
 
@@ -21,63 +32,96 @@ function carregarHeader(){
     `;
 
 }
-function carregarCatalogos(){
+
+// ========================================
+// TEMA
+// ========================================
+
+function aplicarTema(){
+
+    const root = document.documentElement;
+
+    root.style.setProperty("--primary", theme.cores.primaria);
+
+    root.style.setProperty("--secondary", theme.cores.secundaria);
+
+    root.style.setProperty("--accent", theme.cores.destaque);
+
+    root.style.setProperty("--background", theme.cores.fundo);
+
+    root.style.setProperty("--surface", theme.cores.superficie);
+
+    root.style.setProperty("--text", theme.cores.texto);
+
+    root.style.setProperty("--text-light", theme.cores.textoClaro);
+
+}
+
+// ========================================
+// CATÁLOGOS
+// ========================================
+
+function carregarCatalogos() {
 
     const container = document.getElementById("catalogos");
 
     container.innerHTML = "";
 
-    catalogos.forEach(catalogo=>{
+    catalogos.forEach(catalogo => {
 
-        container.innerHTML += `
+        container.innerHTML += criarCard(catalogo);
 
-            <div class="col-12 col-sm-6 col-lg-4">
+    });
 
-                <div class="card h-100 shadow-sm">
+}
+function criarCard(catalogo) {
 
-                    <img
-                        src="${catalogo.capa}"
-                        class="card-img-top"
-                        alt="${catalogo.titulo}">
+    return `
 
-                    <div class="card-body">
+        <div class="col-12 col-sm-6 col-lg-4">
 
-                        <h5>
+            <div class="card h-100 shadow-sm">
 
-                            ${catalogo.titulo}
+                <img
+                    src="${catalogo.capa}"
+                    class="card-img-top"
+                    alt="${catalogo.titulo}">
 
-                        </h5>
+                <div class="card-body">
 
-                        <p>
+                    <h5 class="card-title">
+                        ${catalogo.titulo}
+                    </h5>
 
-                            ${catalogo.descricao}
+                    <p class="card-text">
+                        ${catalogo.descricao}
+                    </p>
 
-                        </p>
+                </div>
 
-                    </div>
+                <div class="card-footer bg-white border-0">
 
-                    <div class="card-footer bg-white border-0">
+                    <a
+                        href="${catalogo.pdf}"
+                        target="_blank"
+                        class="btn btn-dark w-100">
 
-                        <a
-                            href="${catalogo.pdf}"
-                            target="_blank"
-                            class="btn btn-dark w-100">
+                        Abrir Catálogo
 
-                            Abrir catálogo
-
-                        </a>
-
-                    </div>
+                    </a>
 
                 </div>
 
             </div>
 
-        `;
+        </div>
 
-    });
+    `;
 
 }
+// ========================================
+// FOOTER
+// ========================================
 function carregarFooter(){
 
     document.getElementById("footer").innerHTML=`
