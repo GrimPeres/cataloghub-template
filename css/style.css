@@ -8,6 +8,10 @@
 
 }
 
+/*==================================
+    BODY
+==================================*/
+
 body{
 
     background:var(--background);
@@ -16,10 +20,98 @@ body{
 
     font-family:system-ui,sans-serif;
 
-    line-height:1.5;
+}
+/*==================================
+    HERO
+==================================*/
+
+#hero{
+
+    min-height:70vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    background:var(--surface);
+
+    padding:var(--space-xxl) 0;
 
 }
 
+.hero-content{
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+.hero-logo{
+
+    max-height:120px;
+
+    margin:auto;
+
+    margin-bottom:var(--space-xl);
+
+}
+.hero-title{
+
+    font-size:3.2rem;
+
+    font-weight:700;
+
+    margin-bottom:var(--space-md);
+
+}
+.hero-slogan{
+
+    font-size:1.3rem;
+
+    color:var(--text-light);
+
+    margin-bottom:var(--space-lg);
+
+}
+.hero-description{
+
+    max-width:650px;
+
+    margin:auto;
+
+    margin-bottom:var(--space-xl);
+
+    color:var(--text-light);
+
+}
+.hero-button{
+
+    background:var(--primary);
+
+    color:white;
+
+    border:none;
+
+    padding:14px 36px;
+
+    border-radius:999px;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+.hero-button:hover{
+
+    background:var(--accent);
+
+    transform:translateY(-2px);
+
+}
 img{
 
     max-width:100%;
