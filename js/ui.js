@@ -116,7 +116,7 @@ function criarCard(catalogo) {
                 <div class="catalog-actions bg-white border-0">
                 
                 <a
-                    href="${catalogo.pdf}"
+                    href="viewer.html?id=${catalogo.id}"
                     target="_blank"
                     class="catalog-button w-100">
 
