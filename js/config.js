@@ -1,7 +1,7 @@
 const config = {
 
     empresa: {
-        nome: "A Minha Empresa",
+        nome: "MDK Import",
         slogan: "Catálogos Digitais",
         logo: "img/MDKimport_Logo.png",
         descricao: "Consulte todos os nossos catálogos digitais e descubra os nossos produtos."
