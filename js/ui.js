@@ -80,7 +80,7 @@ function criarCard(catalogo) {
 
         <div class="col-12 col-sm-6 col-lg-4">
 
-            <div class="card h-100 shadow-sm">
+            <div class="catalog-card h-100 shadow-sm">
 
                 <img
                     src="${catalogo.capa}"

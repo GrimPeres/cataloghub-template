@@ -1,0 +1,54 @@
+.catalog-card{
+
+    background:var(--surface);
+
+    border-radius:var(--radius-md);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:var(--transition);
+
+    height:100%;
+
+}
+
+.catalog-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+.catalog-card img{
+
+    aspect-ratio:3/4;
+
+    object-fit:cover;
+
+}
+.catalog-card .card-body{
+
+    padding:var(--space-lg);
+
+}
+.catalog-card h3{
+
+    margin-bottom:var(--space-sm);
+
+}
+.catalog-card p{
+
+    color:var(--text-light);
+
+    margin-bottom:var(--space-lg);
+
+}
+.catalog-card .btn{
+
+    width:100%;
+
+    border-radius:var(--radius-sm);
+
+}
