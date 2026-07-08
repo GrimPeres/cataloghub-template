@@ -102,9 +102,10 @@ function criarCard(catalogo) {
                 <div class="card-footer bg-white border-0">
 
                     <a
+                        class="catalog-button w-100">
                         href="${catalogo.pdf}"
                         target="_blank"
-                        class="btn btn-dark w-100">
+
 
                         Abrir Catálogo
 

@@ -17,7 +17,9 @@ const catalogos = [
 
         idioma: "pt",
 
-        ativo: true
+        ativo: true,
+
+        download:true
 
     },
     {
@@ -37,7 +39,9 @@ const catalogos = [
 
         idioma: "pt",
 
-        ativo: true
+        ativo: true,
+
+        download:true
 
     },
     {
@@ -57,7 +61,9 @@ const catalogos = [
 
         idioma: "pt",
 
-        ativo: true
+        ativo: true,
+
+        download:true
 
     }
 
